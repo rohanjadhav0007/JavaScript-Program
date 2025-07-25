@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Question 11. Write a named function calculateDiscount that takes original price and discount percentage, and returns the discounted price. 
+function calculateDiscount(price, discount) {
+    let discountedPrice = price - (price * discount / 100);
+    return discountedPrice;
+}
+
+let originalPrice = 1000;
+let discountPercent = 20;
+
+let finalPrice = calculateDiscount(originalPrice, discountPercent);
+document.writeln("Discounted Price is: ₹" + finalPrice);
+
+        // Question 12. Write a named function calculateDiscount that takes original price and discount percentage, and returns the discounted price. 
+
+function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let year = 2024;
+
+if (isLeapYear(year)) {
+    document.writeln("<br>"+year + " is a Leap Year");
+} else {
+    document.writeln("<br>"+year + " is NOT a Leap Year");
+}
+
+      //  Question 13: Write a named function kmToMiles to convert kilometers into miles
+
+function kmToMiles(km) {
+    let miles = km * 0.621371;
+    return miles;
+}
+
+let kilometers = 10;
+
+let convertedMiles = kmToMiles(kilometers);
+document.writeln("<br>"+kilometers + " kilometers is equal to " + convertedMiles + " miles.");
+
+        //Question 15: Write a named function calculateSquareCube that takes a number and prints both its square and cube. 
+
+function calculateSquareCube(number) {
+    let square = Math.pow(number, 2);
+    let cube = Math.pow(number, 3); 
+
+    document.writeln("<br>Square of " + number + " is: " + square);
+    document.writeln("<br>Cube of " + number + " is: " + cube);
+}
+
+let num = 5;
+calculateSquareCube(num);
+
+        //Question 18: Write a named function averageMarks that takes 5 subject marks and returns the average. 
+
+function    averageMarks(java,html,python,css,c){
+    let total=java+html+python+css+c;
+    let average=total/5;
+    return average;
+}
+let java=89;
+let html=95;
+let python=70;
+let css=75;
+let c=85;
+
+let avg =averageMarks(java,html,python,css,c);
+document.writeln("<br>Average Marks:- " +avg);
+
+        //Question 19: Write a named function hoursToMinutes to convert hours into minutes.
+        
+function hoursToMinutes(hours){
+    let minutes= hours * 60;
+    return minutes;
+
+}
+
+let hrs=89;
+let mins=hoursToMinutes(hrs);
+document.writeln("<br>"+hrs+" hours is equal to"+mins+" minutes");
+    </script>
+</body>
+</html>

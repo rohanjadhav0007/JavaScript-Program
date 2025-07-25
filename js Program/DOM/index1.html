@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>paragraph 1</p>
+    </div>
+    <div>
+        <p class="p">paragraph 2</p>
+    </div>
+    <p class="p">paragraph 3</p>
+    <script>
+        let paras = document.getElementsByClassName('p');
+        for(i=0;i<paras.length;i++){
+            paras[i].setAttribute('style','color:green;background-color:yellow')
+        }
+    </script>
+</body>
+</html>

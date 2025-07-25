@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 30px;
+            text-align: center;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>DATE Functions</h1>
+    <script>
+        let d = new Date();
+        document.writeln("<br>today data :- "+d);
+        document.writeln("<br>Day :- "+d.getDate());
+        document.writeln("<br>date :- "+d.getDay());
+        document.writeln("<br>year :- "+d.getFullYear());
+        document.writeln("<br>Month :- "+d.getMonth());
+        document.writeln("<br>Hours :- "+d.getHours());
+        document.writeln("<br>Minutes :- "+d.getMinutes());
+        document.writeln("<br>Seconds :- "+d.getSeconds());
+        document.writeln("<br>Milliseconds :- "+d.getMilliseconds());
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+        document.writeln("<br>");
+        let date = new Date();
+        document.writeln(date.toDateString());  
+        document.writeln("<br>"+date.toLocaleDateString()); 
+        document.writeln("<br>"+date.toISOString());   
+    </script>
+</body>
+</html>

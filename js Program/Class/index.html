@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(id,name,marks){
+                this.id=id;
+                this.name=name;
+                this.marks=marks;
+            }
+            display() {
+                document.writeln("<br>Id :- "+this.id);
+                document.writeln("<br>Name :- "+this.name);
+                document.writeln("<br>Marks :- "+this.marks+"<br>");
+            }
+        }
+
+        let stud1 = new Student(1,"Rohan",99.99);
+        let stud2 = new Student(2,"sahil",99);
+        let stud3 = new Student(3,"pankaj",99.5);
+        stud1.display();
+        stud2.display();
+        stud3.display();
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 30px;
+            background-image: linear-gradient(to right , rgb(22, 21, 21),pink,rgb(11, 10, 11));
+        }
+        h1{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Functions !!</h1>
+    <script>
+
+
+         let arr=[3,5,7,8,9,4];
+         document.writeln("Original array :- ",arr);
+         
+        let num = arr.find(n=>n%2==0);
+        document.writeln("<br> find :- "+num);
+
+        //document.writeln("<br>");
+        // arr.forEach(n=> document.writeln(n));
+
+        // let sum =arr.reduce((acc,n) => acc +n);
+        // document.writeln("<br>After reduce :- "+sum);
+
+
+        // let cube=arr.map((n)=>n*n*n);
+        // document.writeln("<br>Cube :- "+cube);
+        // let inc=arr.map((n)=>n+10);
+        // document.writeln("<br>Inc :- ",inc);
+
+        // let Sorted = arr.sort((a,b) => b-a);
+        // document.writeln(Sorted);
+
+        // let evenNo = arr.filter((n) => n%2 == 0? true : false);
+        // document.writeln(evenNo);
+
+        // let age = [23,45,75,45,34,15];
+        // let votingAge = age.sort().reverse().filter((a) => a>=18?true:false);
+        // document.writeln("<br>Valid voting age :- "+ votingAge);
+        
+        // document.writeln("Number :- "+arr.sort());
+        // document.writeln("<br>Array reverse Sorted :- ", arr.reverse());
+        // document.writeln("<br>Number :- "+arr.sort().reverse());
+        // document.writeln("<br>Array length :- ", arr.length);
+        // document.writeln("<br>index of 6 :- ", arr.indexOf(4));
+        // document.writeln("<br>value at 2 :- ", arr[2]);
+        // let cars = ["Mercedis", "Ferrari","Thar","Hundai","Fortuner"];
+        // document.writeln("<br>"+cars);
+        // let car1 = cars.map((c) => c.toUpperCase());
+        // document.writeln("<br>Uppercase :- "+car1);
+        // let car2 = cars.filter((c)=>c.length==4);
+        // document.writeln("<br> "+car2);
+        //cars.push("BMW");
+        //document.writeln(cars);
+        //document.writeln("<br> After join :- ",cars.join(" / "));// join:- is convert array to string.
+        // split :- is convert string to array.
+        // let c1 = cars.slice(1,4);
+        // document.writeln("<br>sliced array :- " +c1);
+        // let c1 = cars.splice(2,1,"Maruti","Dezire","ODDI");
+        // document.writeln("<br>splice array:- "+c1);
+        // document.writeln("<br>Original array :-"+cars);
+
+        // document.writeln("<br>After Push :- " + cars);
+        // let car = cars.pop();
+        // document.writeln("<br>After pop :- " + cars);
+        // document.writeln("<br>Removed value :- " + car);
+        // cars.unshift("Maruti");
+        // document.writeln("<br>After unshift :- " + cars);
+        // car = cars.shift();
+        // document.writeln("<br>After Shift :- " + cars);
+        // document.writeln("<br>Removed value :- " + car);
+
+        // document.writeln("<br>array includes Thar :- ",cars.includes("Thar"));
+
+        // document.writeln("<br>Array sort :- "+ cars.sort());
+        // document.writeln("<br>Array reverse Sorted :- ", cars.reverse());
+        
+
+    </script>
+</body>
+</html>

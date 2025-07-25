@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: red;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        button,
+        input {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="stop(event)" action="welcome.html">
+        <!-- <label for="name">Name</label> -->
+        <!-- <input type="text" id="name"><br><br> -->
+        <!-- <button onclick="show()">Say Hello</button> -->
+        <label for="n1">First Number</label>
+        <input type="number" id="n1"><br><br>
+        <label for="n2">Second Number</label>
+        <input type="number" id="n2"><br><br>
+        <button onclick="add()">Add</button>
+    </form>
+    <p>Addition is := </p>
+    
+    <script>
+        function show() {
+    let name = document.getElementById("name").value;
+    alert(name)
+}
+function stop(e) {
+    e.preventDefault();
+}
+let p = document.querySelector('p');
+
+function add() {
+    let n1 = Number(document.getElementById("n1").value)
+    let n2 = Number(document.getElementById("n2").value)
+    let res = n1 + n2;
+    // alert('Additon is ' + res)
+    document.getElementById("n1").value = ""
+    document.getElementById("n2").value = ""
+    p.innerText = `Addition of ${n1} and ${n2} is := ${res}`;
+    document.getElementById('n1').focus();
+}
+    </script>
+</body>
+
+</html>
+

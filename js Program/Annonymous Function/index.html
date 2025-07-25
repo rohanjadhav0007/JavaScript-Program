@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 1.Annonymous Function - Function with out name , used for particular instance</h1>
+    <br>
+    <h1> 2.1.A JavaScript immediately invoked function expression is a function defined as an expression and executed immediately after creation.<br> 2.2:- IIFEs <br> 
+When you define a function, the JavaScript engine adds the function to the global object.<br></h1>
+    <script>
+        // function add(a,b){
+        //     return a +b ;
+        // }
+
+        // h1 1
+        // let res = function(a,b){
+        //     return a+b
+        // }
+        // document.writeln("result is :- "+res(7,9));
+        
+        //h1 2
+        // (function (name){
+        //     document.writeln("Hello :-"+name);
+        // })("Rohan");
+
+        // var counter = (function(){
+        //     var count = 0;
+        //     return{
+        //         increment: function(){
+        //             count++;
+        //         },
+        //         decrement: function() {
+        //             count--;
+        //         },
+        //         getCount: function() {
+        //             return count;
+        //         }
+        //     };
+        // })();
+
+        // counter.increment();
+        // counter.increment();
+        // counter.increment();
+
+        // document.writeln(counter.getCount());
+
+        // var no=10;
+        // document.writeln("before function :- "+no);
+        // function demo(){
+        //      no=20;
+        //     document.writeln("inside function :- "+no);
+        // }
+        // demo()
+        // // no=30;
+        //     document.writeln("after function :- "+no);
+
+        // let res = (a,b)=> a+b
+            
+        // document.writeln("Result :- "+res(9,2));
+        // let greet = (name) => "hello" +name;
+        // document.writeln("<br>Greeting :- "+ greet("Manisha"));
+
+        // let fact = (n) => {
+        //     let f = 1;
+        //     while(n>=1)
+        //     f*=n--;
+        // return f;
+        // }
+        // document.writeln("<br>Factorial :- "+fact(4));
+
+        document.writeln("pi :- "+Math.PI);
+        document.writeln("<br>Max :- "+Math.max(5,3,8,4,6,5,5));
+        document.writeln("<br>min :- "+Math.min(3,3,36,4,58,852,5));
+        document.writeln("<br>Power :- "+Math.pow(3,5));
+        document.writeln("<br>SQRT :- "+Math.sqrt(49));
+        document.writeln("<br>CBRT :- "+Math.cbrt(64));
+        document.writeln("<br>Ceil :- "+Math.ceil(30.1));
+        document.writeln("<br>Floor :- "+Math.floor(56.70));
+        document.writeln("<br>Random :- " +Math.random());
+        document.writeln("<br>Round :- "+Math.round(34.32,34.59));
+    </script>
+</body>
+</html>

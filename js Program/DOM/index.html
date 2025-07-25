@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">JavaScript Tutorial</h1>
+    <div id="div">
+        <p id="para">DOM</p>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <input id="name" value="kumar" type="name">
+    <input type="number" value="20" id="n1"><br><br>
+    <input type="number" value="30" id="n2"><br><br>
+    <p id="res">Addition is :- </p>
+    <script>
+        let h1= document.getElementById("head")
+        console.log(h1);
+        // h1.style.backgroundColor="black";
+        // h1.style.color="white";
+        // h1.style.textAlign="center"
+        // h1.style.padding="20px"
+        h1.textContent = "Demo Session"
+        h1.append("Hello")
+        h1.setAttribute("class","h1")
+        h1.setAttribute("style","width:300px;background-color:red;margin:0 auto")
+        
+        let p = document.getElementById('para');
+        console.log(p);
+        p.setAttribute("title","p tag")
+        let div = document.getElementById('div')
+        div.style.backgroundColor="blue"
+
+        let p1 = document.createElement("p")
+        let text = document.createTextNode("This is newly created p tag");
+        p1.append(text);
+        p1.style.color = "bisque"
+        div.appendChild(p1)
+
+        let listElements=document.getElementsByTagName('li')
+        console.log(listElements)
+        for(let i=0;i<listElements.length;i++){
+            listElements[i].style.color = "orange"
+            listElements[i].style.listStyleType="none"
+            listElements[i].style.float="left"
+            listElements[i].style.marginLeft="20px"
+        }
+        let name =document.getElementById('name')
+        let n1 = parseInt(document.getElementById("n1").value);
+        let n2 = parseInt(document.getElementById("n2").value);
+        let result = n1+n2;
+        let res = document.getElementById('res')
+        res.append(result)
+
+    </script>
+</body>
+</html>

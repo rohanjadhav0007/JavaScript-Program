@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Functions !!</h1>
+    <script>
+        let str="Java Script is Programming Language";
+        document.writeln("String length :- "+ str.length);
+        document.writeln("<br>number length :- "+ "37654456788765434578876543456".length);
+        document.writeln("<br>Upper case :- "+ str.toUpperCase());
+        document.writeln("<br>Lower case :- "+ str.toLowerCase()); 
+        document.writeln("<br>SubString :- "+ str.substring(5,11));
+        document.writeln("<br>Concat :- "+ str.concat(" for Web"));
+        document.writeln("<br>Index of S :- "+str.indexOf('S'));
+        document.writeln("<br>Last Index of g :- "+str.lastIndexOf('g'));
+        document.writeln("<br>Start with String :- "+str.startsWith('Java'));
+        document.writeln("<br>end with String :- "+str.endsWith('java'));
+        document.writeln("<br>Replace :- " + str.replace("Java Script","Java"));
+        document.writeln("<br>Slice :- "+str.slice(14,25));
+        let str1 = "hello-good/afternoon-hiii";
+        let s = str1.split('-');
+        document.writeln("<br> :- " + s);
+        document.writeln("<br>Char at :- "+ str.charAt(10));
+        s1 = "                         Hello";
+        s2 = "Hi";
+        document.writeln("<br>"+ (s2.concat(s1.trim())));
+        document.writeln("<br> Z :- "+ "Z".charCodeAt());
+        
+        
+    </script>
+</body>
+</html>

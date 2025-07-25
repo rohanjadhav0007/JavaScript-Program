@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('welcome')">Click Me </button>
+    <button onclick="show()">Click Me </button>
+    <button>Click Me </button>
+    <script>
+        function show(){
+            // alert("hello")   
+            let body = document.querySelector('body');
+            body.setAttribute("style","background-color:red");
+            let h = document.createElement('h1');
+            let text=document.createTextNode("Event Handling");
+            h.appendChild(text);
+            body.appendChild(h)
+        }
+
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', show);
+    </script>
+</body>
+</html>

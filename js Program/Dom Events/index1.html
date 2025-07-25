@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<button class="d1" onclick="red()">red</button>
+    <button class="d2" onclick="green()">green</button>
+    <button class="d3" onclick="blue()">blue</button>-->
+
+    <!--<button class="d1" onclick="changecolor('red')">red</button>
+    <button class="d2" onclick="changecolor('green')">green</button>
+    <button class="d3" onclick="changecolor('blue')">blue</button>-->
+
+    <button class="d1" onclick="changecolor(this)">red</button>
+    <button class="d2" onclick="changecolor(this)">green</button>
+    <button class="d3" onclick="changecolor(this)">blue</button>
+    <script>
+        let body = document.querySelector('body');
+        
+        // function red(){
+        //     body.style.backgroundColor = "red"
+        // }
+        // function green(){
+        //     body.style.backgroundColor = "green"
+        // }
+        // function blue(){
+        //     body.style.backgroundColor = "blue"
+        // }
+
+        // function changecolor(color){
+        //     body.style.backgroundColor = color;
+
+        // }
+
+        function changecolor(btn){
+            // console.log(btn.innerText);
+            // console.log(btn.getAttribute('class'));
+            // switch(btn.grtAttributibute("class")){
+            //     case "b1" :
+            // }
+            
+            body.style.backgroundColor = btn.innerText;
+        }
+    </script>
+</body>
+</html>
