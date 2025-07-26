@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function newarr(arr1, arr2) {
+        let merge = [...arr1, ...arr2]; 
+        let unique = [...new Set(merge)]; 
+        return unique;
+    }
+    let array1 = [1, 2, 3];
+    let array2 = [3, 4, 5];
+    document.writeln("Merged Array:", newarr(array1, array2));
+    </script>
+</body>
+</html>

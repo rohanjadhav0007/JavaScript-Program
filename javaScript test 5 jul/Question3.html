@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function Char(str) {
+        let Map = {};
+        let maxChar = '';
+        let Count = 0;
+
+        for (let char of str) {
+            Map[char] = (Map[char] || 0) + 1;
+            if (Map[char] > Count) {
+                Count = Map[char];
+                maxChar = char;
+            }
+        }
+
+        return maxChar;
+    }
+    let input = "javascript";
+    document.writeln("Most Frequent Character:- ", Char(input));
+    </script>
+</body>
+</html>
