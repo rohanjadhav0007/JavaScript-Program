@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function Employee(name, position, salary) {
+  this.name = name;
+  this.position = position;
+  this.salary = salary;
+}
+
+Employee.prototype.getAnnualSalary = function() {
+  return this.name+"<br>"+ this.position +"<br>"+"Annual Salary:"+this.salary * 12;
+};
+
+let emp1 = new Employee("Rohan", "Developer", 30000);
+document.writeln( emp1.getAnnualSalary());
+
+    </script>
+</body>
+</html>

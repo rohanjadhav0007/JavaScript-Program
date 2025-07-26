@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function inventory(id,item,price,available){
+                this.id=id;
+                this.item=item;
+                this.price=price;
+                this.instock=available;
+                this.print = () => document.writeln(this.id + " "+ this.item+" "+ this.price)
+        }
+        let i1 = new inventory(1,"computer",50000);
+        let i2 = new inventory(2,"printer",10000);
+        let i3 = new inventory(3,"mouse",500);
+        
+        let arrInventory = new Array();
+        arrInventory.push(i1);
+        arrInventory.push(i2);
+        arrInventory.push(i3);
+
+        let item = arrInventory.find((obj)=> !obj.instock ? obj : null);
+        item.print();
+
+    </script>
+</body>
+</html>

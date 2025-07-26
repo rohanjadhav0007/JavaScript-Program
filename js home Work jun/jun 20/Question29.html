@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rotate(arr,step){
+            let n;
+            for(let i= 1; i <= step;i++){
+                n = arr.shift();
+                arr.push(n);
+            }
+        }
+        let arr = [1,2,3,4,5];
+        rotate(arr,3)
+        document.writeln(arr)
+    </script>
+</body>
+</html>

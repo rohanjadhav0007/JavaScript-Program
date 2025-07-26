@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function EvenOdd(arr) {
+  let even = [];
+  let odd = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      even.push(arr[i]);
+    } else {
+      odd.push(arr[i]);
+    }
+  }
+
+  return { even, odd };
+}
+
+let numbers = [10, 21, 4, 7, 12, 9, 2];
+let result = EvenOdd(numbers);
+document.writeln("Even numbers:- ", result.even); 
+document.writeln("<br>Odd numbers:- " , result.odd);  
+    </script>
+</body>
+</html>

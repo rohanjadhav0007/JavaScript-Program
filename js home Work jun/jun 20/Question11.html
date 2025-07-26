@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["Rohan","pankaj","parth","sahil","Harshawardhan","harshit","vikram","mahesh"]
+        let longname = arr.reduce((n1,n2)=> {
+            if (n1.length > n2.length)
+            return n1;
+        else
+            return n2;
+        });
+        document.writeln(longname)
+    </script>
+</body>
+</html>

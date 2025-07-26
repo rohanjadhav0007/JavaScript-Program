@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Switch case</h1>
+    <script>
+        let a= Number(prompt("Hey whats you age? "));
+        switch (true) {
+    case a<=0:
+        document.writeln("Wrong input :-"+a);
+        break;
+    case a<9:
+        document.writeln("You are a kid and you cannot even think of voting :- "+a);
+        break;
+    case a<18 && a>=9:
+        document.writeln("You are a kid and can think of voting after 18 :- "+a);
+        break;
+    case a>=18 && a<=100:
+        document.writeln("You are able to vote :- "+a);
+        break;
+    default:document.writeln("Wrong input "+a);
+}
+    </script>
+</body>
+</html>

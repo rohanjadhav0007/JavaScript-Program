@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let productIDs = [101, 102, 103, 101, 104, 102];
+
+        let uniqueIDs = productIDs.filter((id, index) => productIDs.indexOf(id) === index);
+
+        document.writeln("Unique Product IDs:", uniqueIDs);
+    </script>
+</body>
+</html>

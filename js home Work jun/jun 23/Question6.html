@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function remove(arr) {
+  if (arr.length === 0) return 0;
+
+  let i = 0;
+
+  for (let j = 1; j < arr.length; j++) {
+    if (arr[j] !== arr[i]) {
+      i++;
+      arr[i] = arr[j];
+    }
+  }
+    arr.length = i + 1;
+  return arr;
+}
+
+let sortedArr = [1, 1, 2, 2, 3, 3, 4];
+let unique = remove(sortedArr);
+document.writeln(unique);
+
+    </script>
+</body>
+</html>

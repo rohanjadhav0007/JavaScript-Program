@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getAdultNames(people) {
+  return people
+    .filter(person => person.age > 18)
+    .map(person => person.name);
+}
+
+let people = [
+  { name: "John", age: 17 },
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 19 },
+  { name: "Tom", age: 15 }
+];
+
+let adultNames = getAdultNames(people);
+document.writeln(adultNames); 
+
+    </script>
+</body>
+</html>

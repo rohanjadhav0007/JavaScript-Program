@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Armstrong Numbers</h1>
+    <script>
+let no = 153;//Number(prompt("Enter any 3-digit number:-"));
+let temp = no;
+let sum = 0
+let digits = no.toString().length;
+
+for (let i = 0; i < digits; i++) {
+    let digit = temp % 10;
+    sum += Math.pow(digit, digits); 
+    temp = Math.floor(temp / 10);
+}
+
+if (sum === no) {
+    document.writeln(no + " is an Armstrong number");
+} else {
+    document.writeln(no + " is NOT an Armstrong number");
+}
+    </script>
+    </div>
+    <div>
+        <h1>Perfect Number</h1>
+        <script>
+            let number = Number(prompt("Enter any number:- ")); 
+            let j = 0;
+
+                for (let i = 1; i < number; i++) {
+                     if (number % i === 0) {
+                         j += i;
+    }
+}
+                    if (j === number) {
+                         document.writeln(number + " is a Perfect Number");
+}                    else {
+                         document.writeln(number + " is NOT a Perfect Number");
+}
+        </script>
+    </div>
+</body>
+</html>

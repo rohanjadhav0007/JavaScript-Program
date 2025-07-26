@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "java is programming language java is programming language for web"
+        let arr = str.split(" ")
+        let wordCount = countWords(arr);
+
+        for (let word in wordCount){
+            document.writeln(word + ": "+ wordCount[word]+"<br>")
+        }
+        function countWords(words){
+            return words.reduce((newArr,word)=>{
+                newArr[word]=(newArr[word] || 0)+1;
+                return newArr;
+            },{});
+        }
+    </script>
+</body>
+</html>

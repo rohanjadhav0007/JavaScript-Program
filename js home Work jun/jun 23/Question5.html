@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function customForEach(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i], i, array);
+  }
+}
+
+let numbers = [10, 20, 30];
+
+customForEach(numbers, function(element, index, arr) {
+  document.writeln("Element at index " + index + " :- "+element);
+});
+
+    </script>
+</body>
+</html>

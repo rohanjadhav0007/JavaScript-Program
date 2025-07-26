@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            /* background-image: url(img.jpg); */
+            
+            
+            
+               
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1 id="head">Head</h1>
+        <p id="para">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="div2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        
+    </div>
+    <script>
+        let D = document.getElementById("div")
+        //D.setAttribute("style","background-color:aqua;")
+        let H = document.getElementById("head")
+        H.setAttribute("style","color:red;background-color:blue;text-align:center;")
+        let p = document.getElementById("para")
+        p.setAttribute("style","color:blue;background-color:yellow;text-align:center;,hi")
+
+        let div22 = document.getElementById("div2")
+        div22.setAttribute("style","color:blue;background-color:rosybrown;background-image:url('img.jpg');width: 100%;height: 600px;")
+        //D.innerText = ("Rohan")
+        //div22.innerHTML = ("Jadhav")
+        //D.appendChild();
+    </script>
+</body>
+</html>

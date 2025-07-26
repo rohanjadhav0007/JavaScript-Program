@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Employee = {
+            name: "Rohan", 
+            position: "hr",
+            salary: 800000,
+            getAnnualSalary: function(){
+                return this.name + "<br>"+ this.position+"<br>"+this.salary;
+            } 
+        };
+        document.writeln(Employee.getAnnualSalary);
+    </script>
+</body>
+</html>

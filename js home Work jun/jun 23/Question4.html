@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Sums(arr) {
+  let result = [];
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    result.push(sum);
+  }
+
+  return result;
+}
+
+let input = [1, 2, 3, 4];
+let cumulative = Sums(input);
+document.writeln(cumulative); 
+
+    </script>
+    <hr>
+    <script>
+        function cumulativeSum(arr) {
+ 
+  if (!arr || arr.length === 0) {
+    return [];
+  }
+
+  const cumulativeSums = [];
+  let currentSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    currentSum += arr[i];
+    cumulativeSums.push(currentSum);
+  }
+  return cumulativeSums;
+}
+
+document.writeln("Cumulative sum of [1, 2, 3]:- " + cumulativeSum([1, 2, 3]));
+    </script>
+</body>
+</html>
