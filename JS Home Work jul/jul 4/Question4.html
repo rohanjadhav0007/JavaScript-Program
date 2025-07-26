@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let personProto = {
+        introduce: function() {
+            return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
+        }
+    };
+    let person1 = Object.create(personProto);
+    person1.name = "Anita";
+    person1.age = 17;
+    document.writeln(person1.introduce());
+
+    </script>
+</body>
+</html>

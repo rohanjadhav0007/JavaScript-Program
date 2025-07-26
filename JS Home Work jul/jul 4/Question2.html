@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Car(brand, year, fuelType) {
+    this.brand = brand;
+    this.year = year;
+    this.fuelType = fuelType;
+
+    this.displayCar = function() {
+        return "Brand: " + this.brand + ", Year: " + this.year + ", Fuel: " + this.fuelType;
+    };
+}
+    let car1 = new Car("Honda", 2021, "Petrol");
+    let car2 = new Car("Toyota", 2023, "Diesel");
+
+    document.writeln(car1.displayCar()+"<br>");
+    document.writeln(car2.displayCar());
+
+        
+    
+    </script>
+</body>
+</html>
