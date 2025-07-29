@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+
+        // let arr = [1,2,3,4,5]
+        // let arr1=["Rahul","Rohan",...arr,"Gauri"];//Spread operator
+
+        // let [a1,,,a2]=arr;//destructuring of array
+
+        // document.writeln(a1+"<br>"+a2);
+        // document.writeln("<br>"+arr1)
+
+        //2
+
+        // let obj ={
+        //     name: "Rohan",
+        //     address:"pune"
+        // }
+        // let obj1={...obj};//Spread operator
+        // document.writeln(obj1.name+" "+obj.address)
+        // let {name,address}=obj;//destructuring of array
+        // document.writeln("<br>"+name+" "+address)
+
+        //3
+
+        // let arr=[1,2,3,4,5,6];
+        // let even=arr.filter((n)=>n>=3);
+        // document.writeln(even+"<br>");
+
+        // let square=arr.map(n=>n*n);
+        // document.writeln(square);
+
+        //4
+
+        // let arr=[1,2,3,4,5,6];
+        // let mul=arr.reduce((a,b)=>a*b,1);
+        // let sum=arr.reduce((a,b)=>a+b,0);
+        // document.writeln(mul+"<br>");
+        // document.writeln(sum);
+
+        let arr=[1,2,3,4,5,6];
+        let data=arr.splice(2,1,10,20);
+        document.writeln(arr+"<br>")
+        document.writeln(data)
+    </script>
+</body>
+</html>
